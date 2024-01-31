@@ -1,16 +1,18 @@
 import React from "react";
+import Card from "../UI/Card";
+import Button from "../UI/Button";
+import './FormOne.css';
 
 function FormOne(){
-    const submitHandler = (event) =>{
+    const addBillHandler = (event) =>{
         event.preventDefault();
-        console.log(event);
-        const userdata = 
+        
     };
     return(
-        <div>
-            <form onSubmit={submitHandler}>
+        <Card className='input'>
+            <form onSubmit={addBillHandler}>
                 <label htmlFor="uid">Unique Order Id:</label>
-                <input type="number" id="uid" />
+                <input type="number" id="uid"/>
                 <label htmlFor="price">Enter Price:</label>
                 <input type="number" id="price" />
                 <label htmlFor="dname">Enter Dish:</label>
@@ -21,9 +23,9 @@ function FormOne(){
                     <option value="two">Table-2</option>
                     <option value="three">Table-3</option>
                 </select>
-                <input type="submit" value="Add to bill"/>
+                <Button type="submit">Add to Bill</Button>
             </form>
-        </div>
+        </Card>
     );
 }
 

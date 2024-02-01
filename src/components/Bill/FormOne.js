@@ -25,10 +25,7 @@ function FormOne(props){
             return;
         }
 
-        console.log(enteredUId);
-        console.log(enteredPrice);
-        console.log(enteredDish);
-        console.log(selectedTable);
+        props.onAddUser(enteredUId, enteredPrice, enteredDish, selectedTable);
 
         setEnteredUId('');
         setEnteredPrice('');

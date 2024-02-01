@@ -62,7 +62,7 @@ function FormOne(props){
                     <option value='2'>Table-2</option>
                     <option value='3'>Table-3</option>
                 </select>
-                <Button type="submit">Add to Bill</Button>
+                <Button btype="add" type="submit">Add to Bill</Button>
             </form>
         </Card>
     );

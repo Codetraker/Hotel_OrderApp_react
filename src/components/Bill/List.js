@@ -1,5 +1,7 @@
 import React from 'react';
 import './List.css';
+import Button from '../UI/Button';
+
 
 function List(props){
     return(
@@ -7,7 +9,8 @@ function List(props){
             <ul>
                 {props.users.map((user) =>(
                     <li key={user.id}>
-                        {user.uid}-{user.price}-{user.dish}-{user.table}
+                        Order_Id-{user.id} - Price-{user.price} - Dish_Name-{user.dish} - Table_No.-{user.table}
+                        <Button btype="delete" type="delete">Delete</Button>
                     </li>
                 ))}
             </ul>

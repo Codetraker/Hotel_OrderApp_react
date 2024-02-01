@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div>
       <H1>Add Order</H1>
       <FormOne onAddUser={addUserHandler}/>
       <H1>Orders Detail</H1>
